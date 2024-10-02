@@ -1,0 +1,34 @@
+import random
+def RPS(a):
+    n = random.randint(0,2)
+    l = ["Rock","Paper","Scissor"]
+    b = l[n]
+    print(b)
+    a = a.lower()
+    b = b.lower()
+    if(a == "rock"):
+        if(b == "scissor"):
+            print("You Win")
+        elif(b == "paper"):
+            print("You Lose")
+        else:
+            print("Draw")
+    elif(a == "paper"):
+        if(b == "rock"):
+            print("You Win")
+        elif(b == "scissor"):
+            print("You Lose")
+        else:
+            print("Draw")
+    elif(a == "scissor"):
+        if(b == "paper"):
+            print("You Win")
+        elif(b == "rock"):
+            print("You Lose")
+        else:
+            print("Draw")
+    else:
+        print("Invalid Entry")
+    
+a = str(input("Enter Rock , Paper or Scissor : "))
+RPS(a)
